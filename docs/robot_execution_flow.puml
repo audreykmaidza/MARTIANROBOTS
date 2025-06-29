@@ -1,0 +1,21 @@
+@startuml
+participant "Robot" as Robot
+participant "Grid" as Grid
+
+loop For each instruction
+    Robot -> Robot : Parse instruction
+    alt L or R
+        Robot -> Robot : Update orientation
+    else F (Forward)
+        Robot -> Robot : Calculate next position
+        Robot -> Grid : IsOutside(nextPosition)
+        alt Outside and no scent
+            Grid -> Robot : Return true
+            Robot -> Grid : Leave scent
+            Robot -> Robot : Mark as LOST
+        else Valid move or scented
+            Robot -> Robot : Move to next position
+        end
+    end
+end
+@enduml

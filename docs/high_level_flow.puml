@@ -1,0 +1,23 @@
+@startuml
+actor User
+participant "SimulationController" as API
+participant "Grid" as Grid
+participant "Robot" as Robot
+
+User -> API : POST /api/simulation
+API -> Grid : Create grid with dimensions
+loop For each robot
+    API -> Robot : Create with start position & orientation
+    loop For each instruction
+        API -> Robot : Execute(instruction)
+        Robot -> Grid : Check if move is out of bounds
+        alt Move is invalid AND no scent
+            Grid -> Robot : Mark as LOST
+            Grid -> Grid : Add scent at position + orientation
+        else Valid move OR scented
+            Robot -> Robot : Move/Turn accordingly
+        end
+    end
+    API -> User : Append final robot position (with LOST if applicable)
+end
+@enduml

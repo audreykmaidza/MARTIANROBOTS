@@ -1,0 +1,14 @@
+@startuml
+actor Developer
+participant "xUnit Test" as Test
+participant "Robot" as Robot
+participant "Grid" as Grid
+
+Developer -> Test : Run unit test
+Test -> Robot : Create robot
+Test -> Grid : Create grid
+Test -> Robot : Execute('FRRFLLFFRRFLL')
+Robot -> Grid : Check bounds / leave scent
+Robot -> Robot : Update state
+Test -> Test : Assert final position and LOST
+@enduml
