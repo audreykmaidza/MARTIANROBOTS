@@ -1,6 +1,6 @@
-# 🛰️ Martian Robots – C# Coding Challenge
+# Martian Robots – C# Coding Challenge
 
-## 🧭 Introduction
+##  Introduction
 
 This project is a solution to the **Martian Robots** coding challenge, implemented in **C#** with a focus on clean code, simplicity, and maintainability.
 
@@ -26,7 +26,8 @@ This project is a solution to the **Martian Robots** coding challenge, implement
 ```bash
 # 1. Clone the repository
 git clone https://github.com/audreykmaidza/MARTIANROBOTS.git
-cd martian-robots
+
+cd MartianRobots
 
 # 2. Restore dependencies
 dotnet restore
@@ -40,18 +41,14 @@ dotnet run --project MartianRobots
 
 ### Running the unit tests 
 1. Run the Tests in the MartianRobotTests Projects in Visual Studio or use dotnet test
-🛠️ Technologies Used
+Technologies Used
 	•	C# .NET 8
 	•	xUnit for unit testing
 	•	FluentAssertions for readable test assertions
 	•	Extension Methods for logic reuse and separation of concerns
 
-⸻
-
-📌 Next Steps
+ Next Steps
 	•	Build a frontend UI using Vue.js or React to visually simulate robot paths and lost positions.
 	•	Add input validation and error handling.
 	•	Add support for additional future command types (e.g., Jump, Backward).
 	•	Deploy as a self-hosted or containerized RESTful API for wider usage.
-
-⸻
