@@ -5,10 +5,13 @@
 This project is a solution to the **Martian Robots** coding challenge, implemented in **C#** with a focus on clean code, simplicity, and maintainability.
 
 ### Key Design Choices
+
 - **Single Responsibility Principle (SRP):** Core logic is kept concise by offloading reusable operations to **extension methods**, promoting modularity and cleaner class responsibilities.
+
 - **Readability & Maintainability:** The code is fully documented to improve readability and to help future developers quickly understand the intent.
+
 - **Test-Driven Development:** Comprehensive **unit tests** ensure correctness by validating the sample scenarios from the challenge.
----
+
 
 ## 📋 Requirements
 
@@ -17,7 +20,6 @@ This project is a solution to the **Martian Robots** coding challenge, implement
 - [xUnit](https://xunit.net/) – for unit testing  
 - [FluentAssertions](https://fluentassertions.com/) – for expressive test assertions
 
----
 
 ## 🚀 Getting Started
 
