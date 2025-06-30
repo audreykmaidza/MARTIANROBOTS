@@ -1,0 +1,67 @@
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+
+# ASP.NET secrets
+secrets.json
+
+# Auto-generated files
+Generated_Code/
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+
+# Temporary files
+*.tmp
+*.temp
+
+# Publish output
+publish/
+dist/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Global packages folder
+packages/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Mac system files
+.DS_Store
+
+# PlantUML outputs
+*.png
+*.svg
+*.utxt
+
+# PlantUML jar (if checked in)
+plantuml.jar
+
+# Other
+*.vspscc
+*.vssscc
+_ReSharper*/
